@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Cambria;
+  color: #182522;
+}
+.header-container {
+  height: 80vh;
+  background-image: url(image/background.jpg);
+  background-size: cover;
+  background-position-x: 40%;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #182522;
+}
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.nav-list {
+  display: flex;
+
+  list-style-type: none;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav-list-item a:hover {
+  color: #ccc;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  padding: 2rem;
+}
+.section-title {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 450px));
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 50px;
+}
+
+.skill-grid-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.skill-grid-item img {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.projects-container {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-item {
+  font-size: 2rem;
+  width: 50%;
+}
+.project-item img {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .projects-container {
+    flex-wrap: wrap;
+  }
+}
