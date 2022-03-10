@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <header class="header-container">
       <nav class="nav nav-top">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
         <ol class="nav-list">
           <li class="nav-list-item"><a href="#">Skills</a></li>
           <li class="nav-list-item"><a href="#">Projects</a></li>
           <li class="nav-list-item"><a href="#">About</a></li>
         </ol>
+        
       </nav>
+      <div class="title-container">
       <h1 class="title">Justin Webb</h1>
-      <span class="sub-title">Driven Frontend Developer</span>
+      <p class="sub-title">Driven Frontend Developer</p>
+      
+    </div>
     </header>
     <main>
       <section class="section">
+        <div class="section-container">
         <h2 class="section-title">Skills</h2>
+      </div>
         <div class="skill-grid">
           <div class="skill-grid-item">
             <img src="image/html-logo.png" alt="HTML 5 Icon" />
@@ -33,14 +47,14 @@
           <div class="skill-grid-item">
             <img src="image/js-logo.png" alt="Javascript Icon" />
             <p>
-              Possess a strong knowledge of the fundamentals of Javascript in
+              Possesses a strong knowledge of the fundamentals of Javascript in
               order to add functionality to any web app
             </p>
           </div>
           <div class="skill-grid-item">
             <img src="image/react-logo.png" alt="React Icon" />
             <p>
-              Able to use popular and update to date frameworks to create apps
+              Able to use popular and up to date frameworks to create apps
               faster and more efficently
             </p>
           </div>
@@ -48,39 +62,64 @@
             <img src="image/github-logo.png" alt="Github Icon" />
             <p>
               A strong understanding of the importance of using github to push
-              code to a repository or to pull code from an exsisting repository
+               or to pull code from an exsisting repository
             </p>
           </div>
         </div>
       </section>
       <section class="section">
-        <h2 class="section-title">Projects</h2>
+        <div class="section-projects-container">
+        <h2 class="project-title">Projects</h2>
+      </div>
         <div class="container">
           <div class="projects-container">
             <div class="project-item">
-              <a href=""> <img src="image/redstoreprojectlogo.PNG" alt="" /></a>
-              <h1>Frontend Ecommcerce Website</h1>
+              <div class="project-image">
+                <a href="https://inspiring-raman-fffad0.netlify.app/#" target="_blank">
+                  <img src="image/redstoreprojectlogo.PNG" alt=""
+                /></a>
+              </div>
+              <h3>Frontend E-commerce Website</h3>
               <p>
-                A Ecommcerce website built using vanilla JS/HTML/CSS. Has a
-                fully functional shopping cart use the "Add to Cart" button to
-                give it a try.Products/About/Contact navbar tabs are
-                placeholders and serve no function
+                An e-commerce website built using vanilla JS/HTML/CSS. This site has implemented a fully functional shopping cart. Just click "Add to Cart" to get started!
               </p>
             </div>
             <div class="project-item">
-              <img src="image/recipeapplogo.PNG" alt="" width="300px" />
-              <h1>API React Web-App</h1>
+              <h4>API React Web-App</h4>
               <p>
-                A recipe search app using Edamam's free API. Lets you search
-                using an ingredient and will list out all the amazing recipes
-                you can make with that ingredient
+                A recipe search app using Edamam's free API. This website lets you search an ingredient and will output all the amazing recipes you can make with it.
               </p>
+              <div class="recipe-project-image">
+                <img src="image/recipeapplogo.PNG" alt=""  />
+              </div>
             </div>
-            <div class="project-item">
-              <img src="image/portlogo.PNG" alt="" />
-              <h1>Portfolio Website</h1>
-              <p>Personal portfoloio site made using vanilla HTML/CSS.</p>
+
+            <div class="mobile-item">
+              <h3>Frontend E-commerce Website</h3>
+              <p>
+                An e-commerce website built using vanilla JS/HTML/CSS. This site has implemented a fully functional shopping cart. Just click "Add to Cart" to get started!
+              </p>
+              <div class="project-image">
+                <a href="">
+                  <img src="image/redstoreprojectlogo.PNG" alt=""
+                /></a>
+              </div>
+              
+              
             </div>
+            <div class="mobile-item">
+              <h4>API React Web-App</h4>
+              <p>
+                A recipe search app using Edamam's free API. This website lets you search an ingredient and will output all the amazing recipes you can make with it.
+              </p>
+              <div class="recipe-project-image">
+                <img src="image/recipeapplogo.PNG" alt="" width="300px" />
+              </div>
+
+
+
+
+
           </div>
         </div>
       </section>
