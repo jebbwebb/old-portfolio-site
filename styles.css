@@ -6,11 +6,7 @@ p {
   font-family: 'Poppins', sans-serif;
   color: #311126;
 }
-body {
-  margin: 0;
-  font-family: Cambria;
-  color: #182522;
-}
+
 .header-container {
   height: 100vh;
   background-image: url(image/background.jpg);
@@ -23,12 +19,6 @@ body {
   color: white;
   flex-direction: column;
 }
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ab4134;
-}
 
 .nav-top {
   position: fixed;
@@ -36,6 +26,10 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ab4134;
 }
 .nav-list {
   display: flex;
@@ -58,7 +52,7 @@ body {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
-  display: block;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -68,7 +62,7 @@ body {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  color: white;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -175,6 +169,32 @@ body {
   }
   .project-text {
     font-size: 1.5rem;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-list ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-list li {
+    text-align: center;
+  }
+  .nav-list a {
+    padding: 0.5rem 1rem;
+  }
+  .nav-list.active {
+    display: flex;
   }
 }
 
