@@ -12,7 +12,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header-container">
+    <header  class="header-container">
       <nav class="nav-top">
         <a href="javascript:;" class="toggle-button">
           <span class="bar"></span>
@@ -20,24 +20,25 @@
           <span class="bar"></span>
         </a>
         <ul class="nav-list">
-          <li class="nav-list-item"><a href="#">Skills</a></li>
-          <li class="nav-list-item"><a href="#">Projects</a></li>
-          <li class="nav-list-item"><a href="#">About</a></li>
+          <li class="nav-list-item"><a href="#home">Home</a></li>
+          <li class="nav-list-item"><a href="#skills">Skills</a></li>
+          <li class="nav-list-item"><a href="#projects">Projects</a></li>
+          <li class="nav-list-item"><a href="#">Contact</a></li>
         </ul>
         
       </nav>
       <div class="title-container">
       <h1 class="title">Justin Webb</h1>
-      <p class="sub-title">Driven Frontend Developer</p>
+      <p id="skills" class="sub-title">Driven Frontend Developer</p>
       
     </div>
     </header>
     <main>
-      <section class="section">
-        <div class="section-container">
-        <h2 class="section-title">Skills</h2>
+      <section  class="section">
+        <div  class="section-container">
+        <h2  class="section-title">Skills</h2>
       </div>
-        <div class="skill-grid">
+        <div  class="skill-grid">
           <div class="skill-grid-item">
             <div class="logo-container">
             <img src="image/html-logo.png" alt="HTML 5 Icon" /></div>
@@ -65,16 +66,16 @@
           <div class="skill-grid-item">
             <div class="logo-container">
             <img src="image/github-logo.png" alt="Github Icon" /></div>
-            <p>
+            <p id="projects">
               A strong understanding of the importance of using github to push
                or to pull code from an exsisting repository
             </p>
           </div>
         </div>
       </section>
-      <section class="section">
+      <section  class="section">
         <div class="section-projects-container">
-        <h2 class="project-title">Projects</h2>
+        <h2   class="project-title">Projects</h2>
       </div>
         <div class="container">
           <div class="projects-container">
@@ -122,12 +123,30 @@
               </div>
 
 
+              
+
 
 
 
           </div>
         </div>
       </section>
+
+      <div class="contact-container">
+        <div class="contact">
+          <h5>Contact</h5>
+          <hr class="line2">
+          <p class="contact-para">Always looking for the next challenge</p>
+         <p> <a class="email" href="mailto:justinwebbmain@gmail.com">justinwebbmain@gmail.com</a></p>
+          <h6>Find Me</h6>
+          <div class="social-links">
+            <a href="https://github.com/jebbwebb?tab=repositories" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/jebb-webb-b71bb722a/" target="_blank">LinkedIn</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
     </main>
     <script src="navbar.js"></script>
   </body>
